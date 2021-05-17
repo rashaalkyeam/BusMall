@@ -27,9 +27,6 @@ let mImgIndex=0;
 let rImg=document.getElementById('rimg');
 let rImgIndex=0;
 
-
-
-
 function renderimg(){
     lImgIndex=generateImg();
     mImgIndex=generateImg();

@@ -22,8 +22,6 @@
   #rightImg {
     width: 200px;
     margin: 10px;
-    /* display: block; */
-    /* margin: 0 auto; */
     border-radius: 10px;
   }
   span {
@@ -34,3 +32,43 @@
     font-size: 30px;
   }
   
+  button{
+
+    background-color:blue;
+    border: 2px solid black;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 8px;
+
+  }
+
+  button:hover {
+    background-color: #4CAF50; 
+    color: white;
+  }
+
+  input[type=submit]{
+    background-color:blue;
+    border: 2px solid black;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 8px;
+
+  }
+  input[type=submit]:hover{
+    background-color: #4CAF50; 
+    color: white;
+
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=text]:focus {
+    background-color: lightblue;
+    border-radius: 8px;
+  }

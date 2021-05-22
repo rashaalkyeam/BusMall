@@ -96,6 +96,30 @@ function handelClicks(event) {
     }
 }
 
+
+
+localStorage.setItem('prodect',JSON.stringify(ProdectImage));
+ProdectImage= JSON.parse(localStorage.getItem('prodect'));
+
+let disResult= document.getElementById('result');
+disResult.addEventListener('click', view);
+
+function view(event){
+let divEl=document.getElementById('ulDisplay');
+let ulEl = document.createElement('ul');
+divEl.appendChild(ulEl);
+
+for (let i = 0; i < prodect.length; ii++) {
+    let liEl=document.createElement('li');
+    ulEl.appendChild(liEl);
+    liEl.textContent= prodect;
+    
+}
+
+
+}
+
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -132,3 +156,4 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+

@@ -19,11 +19,9 @@ let prodectImages = ['ivation.jpg',
     'sheildGuard.jpg', 'personTravelPicnic.jpg',
     'woodSlim.jpg', 'headPhone.jpg', 'tabletStand.jpg',
     'bed.jpg', 'chair.jpg', 'Closet.jpg', 'table.jpg'];
-
 for (let i = 0; i < prodectImages.length; i++) {
     new ProdectImage(prodectImages[i]);
 }
-
 function generateImage() {
     return Math.floor(Math.random() * prodect.length);
 }

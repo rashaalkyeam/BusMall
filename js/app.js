@@ -108,25 +108,38 @@ function handelClicks(event) {
     }
 }
 
+function saveLocal(){
+
+localStorage.setItem('prodect2', JSON.stringify(prodect));
+}
+function lodLocal(){
+ let   prod = JSON.parse(localStorage.getItem('prodect2'));
+if (prod){
+    prodect= prod;
+}
 
 
-/**localStorage.setItem('prodect', JSON.stringify(ProdectImage));
-ProdectImage = JSON.parse(localStorage.getItem('prodect'));
+}
+lodLocal();
 
 let disResult = document.getElementById('result');
 disResult.addEventListener('click', view);
-*/
+
 function view(event) {
+    
     let divEl = document.getElementById('ulDisplay');
     let ulEl = document.createElement('ul');
     divEl.appendChild(ulEl);
 
-    for (let i = 0; i < prodect.length; ii++) {
+    for (let i = 0; i < prodect.length; i++) {
         let liEl = document.createElement('li');
         ulEl.appendChild(liEl);
         liEl.textContent = prodect;
 
     }
+    saveLocal();
+
+
 }
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {

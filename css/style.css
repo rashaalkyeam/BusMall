@@ -1,4 +1,4 @@
-* {
+  *{
     box-sizing: border-box;
   }
   h1 {
@@ -7,7 +7,7 @@
   img {
     display:inline-block ;
     width: 150px;
-    float: left;
+    /* float: left; */
     height: 150px;
     border: 2px solid lightblue;
   }
@@ -15,12 +15,13 @@
   #limg,#mimg,#rimg{
     width: 200px;
     margin: 10px;
+
     border-radius: 10px;
   }
   span {
     margin-left: 50px;
   }
-  #attempts {
+  #num {
     margin-left: 20px;
     font-size: 30px;
   }
@@ -79,9 +80,6 @@
   .imgstyle{
     margin: 20px;
     display: inline-block;
-
-
-
   }
 
   #ulDisplay{
@@ -90,6 +88,5 @@
     align-items: center;
     padding-left: 200px;
     margin: 0 auto;
-
   }    
 
